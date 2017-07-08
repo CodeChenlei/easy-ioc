@@ -44,8 +44,8 @@ public class SampleContainer implements Container {
 
 	@Override
 	public <T> T getBeanByName(String name) {
-		String className = beankeys.get(name);
- +		Object obj = beans.get(className);
+		String className = beanKeys.get(name);
+ 		Object object = beans.get(className);
 		if(null != object){
 			return (T) object;
 		}
